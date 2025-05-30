@@ -1,0 +1,150 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background: #fff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #EAE4DD;
+  border-radius: 20px;
+  height: 30px;
+  border: solid rgb(32, 23, 23, 0.1);
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  margin: 10px;
+}
+
+
+.toggle-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.toggle-buttons button {
+  padding: 8px 20px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle-buttons .active {
+  background: #000;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.card .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card .price span {
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+
+
+.card .strike strong {
+  color: #fff;
+  background: #ffc107;
+  padding: 0 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.card .desc {
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.card ul li {
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.checked::before {
+  content: "✔";
+  color: green;
+  margin-right: 8px;
+}
+
+.crossed::before {
+  content: "✖";
+  color: gray;
+  margin-right: 8px;
+}
+
